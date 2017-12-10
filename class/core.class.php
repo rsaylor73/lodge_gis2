@@ -295,7 +295,7 @@ class Core {
                                 ?>
                                 <script>
                                 setTimeout(function() {
-                                      window.location.replace('/transfers')
+                                      window.location.replace('/trip_insurance')
                                 }
                                 ,0);
                                 </script>
@@ -307,7 +307,7 @@ class Core {
                         ?>
                         <script>
                         setTimeout(function() {
-                              window.location.replace('/transfers')
+                              window.location.replace('/trip_insurance')
                         }
                         ,0);
                         </script>
@@ -1080,7 +1080,7 @@ class Core {
 			$pdf->AddPage();
 			$pdf->SetFont('Arial','',9);
 
-			$reservation_info = "Reservation #". $_SESSION['reservationID'] . " : " . $_SESSION['lodge'] . " : Starting " . $_SESSION['start_date'] . " : Nights " . $_SESSION['nights'];
+			$reservation_info = "Reservation #". $_SESSION['reservationID'] . " : " . 'Aggressor Safari Lodge' . " : Starting " . $_SESSION['start_date'] . " : Nights " . $_SESSION['nights'];
 			$w=$pdf->GetStringWidth($reservation_info);
 			$pdf->SetX((210-$w)/2);
 			$pdf->Cell($w,0,$reservation_info,0,2,'C');
