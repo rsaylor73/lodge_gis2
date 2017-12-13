@@ -947,7 +947,7 @@ class Core {
 
 			// add external class
 			include_once ('fpdf.class.php');
-			$pdf=new PDF();
+			$pdf=new PDFclass();
 
 			$pdf->AddPage();
 			$pdf->SetFont('Arial','',9);
@@ -1266,7 +1266,7 @@ class Core {
 		if ($_SESSION['resellerID'] == "19") {
 
 			require_once('class/authorizenet.class.php');
-			$a = new authorizenet_class;
+			$a = new authorizenet;
 			$a->add_field('x_login', authnet_login);
 			$a->add_field('x_tran_key', authnet_key);
 			$a->add_field('x_version', '3.1');
@@ -1302,6 +1302,8 @@ class Core {
 				$transactionID = $a->get_transaction_id();
 				$payment = $this->record_payment($transactionID);
 				if ($payment == "TRUE") {
+					$sql = "UPDATE `inventory` SET `status` = 'booked' WHERE `reservationID` = '$_SESSION[reservationID]'";
+					$result = $this->new_mysql($sql);
 					$msg = "<font color=green>The payment of $$_POST[amount] was processed.</font>";
 				}
 				break;

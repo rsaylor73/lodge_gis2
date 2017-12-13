@@ -1,7 +1,7 @@
 <?php
                 require('fpdf16/fpdf.php');
 
-                class PDF extends FPDF
+                class PDFclass extends FPDF
                 {
                         var $B;
                         var $I;

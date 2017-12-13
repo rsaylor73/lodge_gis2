@@ -1,6 +1,6 @@
 <?php
 
-class authorizenet_class {
+class authorizenet {
 
    var $field_string;
    var $fields = array();
