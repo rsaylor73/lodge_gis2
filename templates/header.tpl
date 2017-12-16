@@ -95,7 +95,7 @@ $(function() {
 
         <table width="990" height="125" border="0" cellspacing="0" cellpadding="0">
               <tr>
-                <td width="30%" align="center" valign="bottom"><img src="/images/logo-AF.png" alt="Aggressor Fleet" title="Aggressor Fleet" width="115" height="111" vspace="3" align="left" /></td>
+                <td width="30%" align="center" valign="bottom"><img src="/images/Logo-ResSystem.png" alt="Aggressor Fleet" title="Aggressor Fleet" height="111" vspace="3" align="left" /></td>
                 <td width="70%" align="right" valign="bottom"><img src="/images/hdr-tt-GIS.png" width="535" height="74" alt="Guest Information System" title="Guest Information System" /></td>
               </tr>
         </table>
@@ -119,10 +119,11 @@ $(function() {
     {if $name ne ""}
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td width="15%" align="center"><strong>Name: </strong>{$name}</td>
-        <td width="15%" align="center"><strong>Confirmation # </strong>{$reservationID}</td>
+        <td width="20%" align="center"><strong>Name: </strong>{$name}</td>
+        <td width="20%" align="center"><strong>Confirmation # </strong>{$reservationID}</td>
         <td width="20%" align="center"><strong>Check-In: </strong>{$start_date}</td>
-        <td width="15%" height="50" align="center"><strong># Nights: </strong>{$nights}</td>
+        <td width="20%" height="50" align="center"><strong># Nights: </strong>{$nights}</td>
+        <td width="20%"><a href="http://aggressorsafarilodge.com/kbyg.pdf" target="_blank">KBYG</a></td>
       </tr>
     </table>
     {/if}

@@ -37,10 +37,10 @@
 			</div>
 
 			<div class="row top-buffer" id="aa1">
-				<div class="col-sm-3"><input type="text" name="arrival_airport1" value="{$arrival_airport1}"class="form-control"></div>
-                                <div class="col-sm-3"><input type="text" name="arrival_airline1" value="{$arrival_airline1}" class="form-control"></div>
-                                <div class="col-sm-2"><input type="text" name="arrival_flight1" value="{$arrival_flight1}" class="form-control"></div>
-                                <div class="col-sm-3"><input type="text" name="arrival_date_time1" value="{$arrival_date_time1}" class="form-control datetimepicker"></div>
+				<div class="col-sm-3"><input type="text" required name="arrival_airport1" value="{$arrival_airport1}"class="form-control"></div>
+                <div class="col-sm-3"><input type="text" required name="arrival_airline1" value="{$arrival_airline1}" class="form-control"></div>
+                <div class="col-sm-2"><input type="text" required name="arrival_flight1" value="{$arrival_flight1}" class="form-control"></div>
+                <div class="col-sm-3"><input type="text" required name="arrival_date_time1" value="{$arrival_date_time1}" class="form-control datetimepicker"></div>
 				<div class="col-sm-1">
 					{if $arrival_airport2 eq ""}
 					<input type="button" 
@@ -113,10 +113,10 @@
                         </div>
 
                         <div class="row top-buffer" id="dd1">
-                                <div class="col-sm-3"><input type="text" name="departure_airport1" value="{$departure_airport1}" class="form-control"></div>
-                                <div class="col-sm-3"><input type="text" name="departure_airline1" value="{$departure_airline1}" class="form-control"></div>
-                                <div class="col-sm-2"><input type="text" name="departure_flight1" value="{$departure_flight1}" class="form-control"></div>
-                                <div class="col-sm-3"><input type="text" name="departure_date_time1" value="{$departure_date_time1}" class="form-control datetimepicker"></div>
+                                <div class="col-sm-3"><input type="text" required name="departure_airport1" value="{$departure_airport1}" class="form-control"></div>
+                                <div class="col-sm-3"><input type="text" required name="departure_airline1" value="{$departure_airline1}" class="form-control"></div>
+                                <div class="col-sm-2"><input type="text" required name="departure_flight1" value="{$departure_flight1}" class="form-control"></div>
+                                <div class="col-sm-3"><input type="text" required name="departure_date_time1" value="{$departure_date_time1}" class="form-control datetimepicker"></div>
                                 <div class="col-sm-1">
 					{if $departure_airport2 eq ""}
 					<input type="button" 

@@ -393,7 +393,7 @@ class Core {
 
 	public function travel_info() {
         $template = "travel_info.tpl";
-        $data['step'] = "8";
+        $data['step'] = "7";
         $data['max'] = MAXSTEPS; // GIS max page number
 
         $status = $this->get_gis_status('gis_travel_info');
@@ -498,7 +498,7 @@ class Core {
 	public function gis_confirmation() {
 
         $template = "confirmation.tpl";
-        $data['step'] = "7";
+        $data['step'] = "8";
         $data['max'] = MAXSTEPS; // GIS max page number
 
         $status = $this->get_gis_status('gis_confirmation');
@@ -666,11 +666,12 @@ class Core {
 			// Trip Insurance
 			$html .= $this->paint_button($row['gis_requests'],$row['gis_trip_insurance'],'trip_insurance','Trip Insurance');
 
-			// Confirmation
-			$html .= $this->paint_button($row['gis_trip_insurance'],$row['gis_confirmation'],'gis_confirmation','Confirmation');
 
 			// Travel Info
 			$html .= $this->paint_button($row['gis_guest_info'],$row['gis_travel_info'],'travel_info','Travel Info');
+
+			// Confirmation
+			$html .= $this->paint_button($row['gis_trip_insurance'],$row['gis_confirmation'],'gis_confirmation','Confirmation');			
 
 		}
 		return($html);
