@@ -78,8 +78,8 @@ $(function() {
                 dateFormat: "mm/dd/yy",
                 changeMonth: true,
                 changeYear: true,
-                minDate: +0,
-                yearRange: "-0:+30"
+                minDate: -120,
+                yearRange: "-1:+30"
         });
 });
 </script>

@@ -12,7 +12,9 @@ while ($row = $result->fetch_assoc()) {
         define('authnet_key',$row['authnet_key']);
         define('authnet_testmode',$row['authnet_testmode']);
 }
-$core->check_gis();
+if ($_GET['section'] != "staff_download_waiver") {
+	$core->check_gis();
+}
 
 // determin the action for what bubble to open
 $data['buttons'] = $core->button_action();
@@ -21,6 +23,7 @@ $data['buttons'] = $core->button_action();
 // header
 switch($_GET['section']) {
 	case "download_waiver":
+	case "staff_download_waiver":
 	$show_header = "off";
 	break;
 

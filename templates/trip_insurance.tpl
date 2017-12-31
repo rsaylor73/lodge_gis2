@@ -25,7 +25,7 @@
 
 			<div class="row top-buffer">
 				<div class="col-sm-12">
-					Aggressor Fleet Fleet strongly recommend that each guest purchase comprehensive dive, accident, medical, baggage, trip cancellation and interruption insurance.
+					Aggressor Fleet Fleet strongly recommends that each guest purchase comprehensive accident, medical, baggage, trip cancellation and interruption insurance.
 					<br><br>
 					Please research and understand the details of the policies you purchase. It is important you understand the coverages your policy offers and any limitations 
 					that may exist on claims made. 

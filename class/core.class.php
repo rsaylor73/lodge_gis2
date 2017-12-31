@@ -679,7 +679,7 @@ class Core {
 
 	public function paint_button($prior_action,$this_action,$link,$title) {
 		$html = "";
-	        if (($prior_action == "complete") or ($action == "verified")) {
+	        if (($prior_action == "complete") or ($prior_action == "verified") or ($this_action == "verified")) {
         	        if ($this_action == "pending") {
                 	        $html .= "<td width=\"99\" height=\"50\" align=\"center\" valign=\"top\">
                                 <a href=\"/$link\"><img src=\"/images/GIS-bt-start.gif\" border=\"0\" width=\"25\" height=\"25\" /></a><br />
@@ -788,9 +788,9 @@ class Core {
 				}
 
 				$subj = "Aggressor Safari Lodge GIS Complete conf #$_SESSION[reservationID]";
-				$msg = "The following guest has completed there GIS for Aggressor Safie Lodge:<br><br>Reservation #$_SESSION[reservationID]<br><br>
-				Guest: $first $last<Br>
-				";
+				$msg = 'The following guest has completed there GIS for Aggressor Safari Lodge:<br><br>Reservation #<a href="'.reservationdomain.'/viewreservation/'.$_SESSION['reservationID'].'">'.$_SESSION['reservationID'].'</a><br><br>
+				Guest: '.$first.' '.$last.'<Br>
+				';
 
 				mail(agent_email,$subj,$msg,header_email);
 
@@ -908,6 +908,19 @@ class Core {
         header('Content-type: application/pdf');
         header('Content-Disposition: inline; filename="waiver.pdf"');
 		print "$pdf";
+	}
+
+	public function staff_download_waiver() {
+		$path = waiver . "/";
+		// contactID _ reservationID _ inventoryID
+        $filename = $_GET['contactID'] . "_" . $_GET['reservationID'] . "_" . $_GET['inventoryID'] . ".pdf";
+        $filename = $path.$filename;
+
+		$pdf = file_get_contents($filename);
+        header('Content-type: application/pdf');
+        header('Content-Disposition: inline; filename="waiver.pdf"');
+		print "$pdf";
+
 	}
 
 	public function update_waiver() {

@@ -90,12 +90,6 @@
                                 </div>
                         </div>
 
-                        <!-- rows 5 -->
-                        <div class="row top-buffer">
-                                <div class="col-sm-12">
-                                        If your name does not match your passport, or if you do not have your passport number available at this time please do not save this page or submit the waiver until your name has been corrected (email <a href="mailto:info@aggressor.com">info@aggressor.com</a>) or until you have your passport number available.
-                                </div>
-                        </div>
                         <!-- row 6 -->
                         <div class="row top-buffer">
                                 <div class="col-sm-3">

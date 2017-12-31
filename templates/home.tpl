@@ -4,7 +4,7 @@
 
 <strong>Welcome to your Guest Information System (GIS) profile.</strong>
 <br>
-Please complete each of the sections above to be cleared for boarding starting with the ‘Guest Information’ tab.
+Please complete each of the sections above to be cleared for check-in starting with the ‘Guest Information’ tab.
 <br>
         <ul>
         <li>Payments may be made online by using <b>Visa or MasterCard</b>.</li>
@@ -15,7 +15,7 @@ Please complete each of the sections above to be cleared for boarding starting w
         </ul>
 Thank you for choosing to travel with us. Once you have completed your GIS and final payment is received 90 days prior to departure, your travel package will be mailed.
 <br><br>
-For questions regarding the GIS or about a specific yacht, please email <a href="mailto:info@aggressor.com">info@aggressor.com</a>.
+For questions regarding the GIS, please email <a href="mailto:info@aggressor.com">info@aggressor.com</a>.
 </p>
 </td>
   </tr>
