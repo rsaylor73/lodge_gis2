@@ -1009,10 +1009,10 @@ class Core {
 			$filename = $_SESSION['contactID'] . "_" . $_SESSION['reservationID'] . "_" . $_SESSION['inventoryID'] . ".pdf";
 			$filename = $path.$filename;
 
-			if(file_exists($filename)){
-				$data['error'] = "<br><font color=red>Error: waiver has already been created. Please contact an agent so we can reset your waiver.</font><br>";
-				$this->load_smarty($data,'error.tpl');
-			} else {
+			//if(file_exists($filename)){
+			//	$data['error'] = "<br><font color=red>Error: waiver has already been created. Please contact an agent so we can reset your waiver.</font><br>";
+			//	$this->load_smarty($data,'error.tpl');
+			//} else {
 				$pdf->Output($filename);
                 $sql2 = "UPDATE `gis_action` SET `gis_waiver` = 'complete' 
                 WHERE `contactID` = '$_SESSION[contactID]' 
@@ -1027,7 +1027,7 @@ class Core {
                 ,0);
                 </script>
                 <?php
-			}
+			//}
 		} else {
             // goto next page
             ?>
