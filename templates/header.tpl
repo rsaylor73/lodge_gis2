@@ -106,8 +106,8 @@ $(function() {
   <tr background="/images/bck-nav.gif">
     <td height="36" align="right" background="/images/bck-nav.gif"><table width="520" border="0" cellpadding="0" cellspacing="0">
         <tr>
-          <td width="150"><strong>{$travel}</strong></td>
-          <td width="150" align="center"><strong>{$kbyg}</strong></td>
+          <td width="150"><strong><a href="http://www.liveaboardvacations.com" target="_blank">Airline, Resorts & Tours</a></strong></td>
+          <td width="150" align="center"><strong><a href="http://aggressorsafarilodge.com/kbyg.pdf" target="_blank">Know Before You Go</a></strong></td>
           <td width="20%" align="center">&nbsp;</td>
         </tr>
     </table></td>
@@ -119,11 +119,10 @@ $(function() {
     {if $name ne ""}
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
-        <td width="20%" align="center"><strong>Name: </strong>{$name}</td>
-        <td width="20%" align="center"><strong>Confirmation # </strong>{$reservationID}</td>
-        <td width="20%" align="center"><strong>Check-In: </strong>{$start_date}</td>
-        <td width="20%" height="50" align="center"><strong># Nights: </strong>{$nights}</td>
-        <td width="20%"><a href="http://aggressorsafarilodge.com/kbyg.pdf" target="_blank">KBYG</a></td>
+        <td width="25%" align="center"><strong>Name: </strong>{$name}</td>
+        <td width="25%" align="center"><strong>Confirmation # </strong>{$reservationID}</td>
+        <td width="25%" align="center"><strong>Check-In: </strong>{$start_date}</td>
+        <td width="25%" height="50" align="center"><strong># Nights: </strong>{$nights}</td>
       </tr>
     </table>
     {/if}
